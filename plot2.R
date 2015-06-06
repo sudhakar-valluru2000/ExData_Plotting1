@@ -51,7 +51,7 @@ r1 <- within (r1, timestamp <- paste(Date,Time, sep =' '))
 
 r1$timestamp <- as.POSIXct(strptime(r1$timestamp, "%d/%m/%Y %H:%M:%S"))
 
-png("./plot2.png", width = 480,height = 480, units = "px", type = c("windows", "cairo", "cairo-png") )
+png("./plot2.png", width = 480,height = 480, units = "px" )
 
 plot(r1$timestamp, r1$Global_active_power, type="l", xlab = "", ylab = "Global Active Power (kilowatts)") 
 

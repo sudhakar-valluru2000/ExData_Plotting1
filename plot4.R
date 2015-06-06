@@ -51,7 +51,7 @@ r1 <- within (r1, timestamp <- paste(Date,Time, sep =' '))
 
 r1$timestamp <- as.POSIXct(strptime(r1$timestamp, "%d/%m/%Y %H:%M:%S"))
 
-png("./plot4.png", width = 480,height = 480, units = "px", type = c("windows", "cairo", "cairo-png") )
+png("./plot4.png", width = 480,height = 480, units = "px")
 #png("./plot3.png", width = 480,height = 480, units = "px" )
 
 
