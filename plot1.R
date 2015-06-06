@@ -49,7 +49,7 @@ r1 <- read.csv.sql(file1, sql = "select * from file where Date in ('1/2/2007', '
 
 closeAllConnections()
 
-png("./plot1.png", width = 480,height = 480, units = "px", type = c("windows", "cairo", "cairo-png") )
+png("./plot1.png", width = 480,height = 480, units = "px" )
 #title(main="Global Active Power", xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
 hist(r1$Global_active_power, main="Global Active Power", xlab = "Global Active Power (kilowatts)", ylab = "Frequency", col = "red", freq = TRUE)
 graphics.off()
